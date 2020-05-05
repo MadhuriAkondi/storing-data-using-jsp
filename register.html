@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+input[type=email],input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #20B2AA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.aha {
+  padding: 14px 20px;
+  background-color: #8470FF;
+}
+.aha, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#content{
+padding-left:250px; 
+padding-top: 70px;
+}
+#main{
+padding-left:250px;
+}
+
+.topnav{
+position: fixed;
+vertical-align: top;
+height: 3 em;
+width: 100%;
+z-index: 100;
+left: 0;
+top : 0;
+background-color:  #ffeebb;
+}
+.topnav a{
+  float: left;
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 48px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.topnav a:hover{
+background-color:#dddddd;
+color:black;
+}
+.topnav input[type=text]
+{
+float: right;
+padding: 8px;
+border: none;
+margin-top: 10px;
+margin-right:80px;
+font-size:15px;
+}
+.sidenav{
+padding-top: 20px;
+position: fixed;
+left: 4px;
+top: 4em;
+width: 200px;
+background-color:#111 ;
+padding-left: 1.5 em;
+height: 100%;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+</style>
+</head>
+
+<body style="background-color:#b0e0e6;">
+<h1 id="content">welcome</h1>
+<p id="main">In this webpage you are going to learn about HTML,CSS and Java Script fundamentals.</p><br>
+<div class="login">
+ <form action="register.jsp" id="main" style="border:1px solid #ccc">
+  <div class="container">
+    <h1><b>Sign Up</b></h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="email"><b>Email</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" required>
+    <br><br>
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+     <br><br>
+    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+	  <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="aha">Login</button>
+    </div>
+  </div>
+</form>
+<div class="sidenav">
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">JAVA SCRIPT</a>
+
+</div>
+<div class ="topnav">
+<a href="#">Contents</a>
+<a href="#">home</a>
+<a href="#">name</a>
+<i style="font-size:25px; padding-left:355px; padding-top:15px;" class="fa fa-search"></i>
+<input type = "text" placeholder = "search">
+
+</div>
+</div>
+</body>
+</html>
